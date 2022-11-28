@@ -22,14 +22,16 @@ const Services = () => (
     <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4">
       <div className="flex-1 flex flex-col justify-start items-start">
         <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient ">
-          Services that we
-          <br />
-          continue to improve
+          How to send Crypto
         </h1>
-        <p className="text-left my-2 text-white font-light md:w-9/12 w-11/12 text-base">
-          The best choice for buying and selling your crypto assets, with the
-          various super friendly services we offer
-        </p>
+        <b className="text-left my-2 text-white font-light md:w-9/12 w-11/12 text-base">
+          1. Create a Metamask account <br />
+          2. Connect your metamask wallet <br />
+          3. Set amount, keyowrd and message you want to transfer <br />
+          4. Hit Send Now <br />
+          5. Approve the Transaction
+
+        </b>
       </div>
 
       <div className="flex-1 flex flex-col justify-start items-center">
@@ -39,12 +41,7 @@ const Services = () => (
           icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
           subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
         />
-        <ServiceCard
-          color="bg-[#8945F8]"
-          title="Best exchange rates"
-          icon={<BiSearchAlt fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
-        />
+
         <ServiceCard
           color="bg-[#F84550]"
           title="Fastest transactions"
