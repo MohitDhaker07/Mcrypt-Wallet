@@ -8,7 +8,7 @@ import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
 
 const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
-const address = '0xA0384467aB5815aCDD3ad2633d76f757a2ECb19F'
+const address = '0xdccbC9B2d47c7856fe82d7625fF02F7C5220669f'
 
 const Input = ({ placeholder, name, type, value, handleChange }) => (
   <input
@@ -42,7 +42,13 @@ const Welcome = () => {
             Send me some <br />Ether here
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-            Explore the crypto world.Try sending me some...
+            "Explore the crypto world.Try sending me some (Goerli) fake ether...""
+          </p>
+
+          <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
+            This is my Public Key
+
+            0xdccbC9B2d47c7856fe82d7625fF02F7C5220669f
           </p>
           {!currentAccount && (
             <button
@@ -80,7 +86,7 @@ const Welcome = () => {
             </div>
           </div>
           <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism">
-            <Input placeholder="Mohit" value={address} name="addressTo" type="text" handleChange={handleChange} />
+            <Input placeholder="Mohit" name="addressTo" type="text" handleChange={handleChange} />
             <Input placeholder="Amount (ETH)" name="amount" type="number" handleChange={handleChange} />
             <Input placeholder="Keyword (Gif)" name="keyword" type="text" handleChange={handleChange} />
             <Input placeholder="Enter Message" name="message" type="text" handleChange={handleChange} />
